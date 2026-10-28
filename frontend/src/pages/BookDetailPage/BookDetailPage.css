@@ -1,0 +1,83 @@
+.book-header {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.book-header img {
+    width: 250px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.reviews-list {
+    list-style: none;
+    padding: 0;
+}
+
+.reviews-list li {
+    background: #f8fafc;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #8b5cf6;
+}
+
+.stars {
+    color: #fbbf24;
+}
+
+.review-form-container {
+    margin-top: 30px;
+    background: #f8fafc;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+}
+
+.review-form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+}
+
+.review-form-container select,
+.review-form-container textarea {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #cbd5e0;
+    border-radius: 8px;
+    outline: none;
+}
+
+.review-form-container textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.review-form-container select:focus,
+.review-form-container textarea:focus {
+    border-color: #8b5cf6;
+}
+
+.review-form-container button {
+    background: #8b5cf6;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.review-form-container button:hover:not(:disabled) {
+    background: #7c3aed;
+}
+
+.review-form-container button:disabled {
+    background: #cbd5e0;
+    cursor: not-allowed;
+}
